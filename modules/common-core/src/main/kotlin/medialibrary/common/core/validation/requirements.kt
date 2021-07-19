@@ -23,6 +23,8 @@ fun Validation<Int>.isLessThanOrEqualTo(maxValue: Int) =
 
 // STRING
 
+typealias StringRequirements = Validation<String>.() -> Unit
+
 /**
  * Requires that the _value_ is not blank (not empty and not just whitespace
  * characters).
